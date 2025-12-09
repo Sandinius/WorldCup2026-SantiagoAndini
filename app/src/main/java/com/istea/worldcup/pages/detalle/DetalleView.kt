@@ -61,7 +61,7 @@ fun DetalleView (
         topBar = {
             TopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = Color.Green,
+                    containerColor = MaterialTheme.colorScheme.primaryContainer,
                     titleContentColor = MaterialTheme.colorScheme.primary
                 ),
                 title = { Text(text = "Partidos") },
@@ -117,7 +117,7 @@ fun Cargando() {
 fun Contenido(grupo: Group){
     Column {
         Text(
-            grupo.name,
+            text = grupo.name,
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.padding(16.dp)
         )
